@@ -1,0 +1,50 @@
+<ion-view title="Bubble Smash" hide-back-button="true" id="page1" style="background-color:#109C4C;">
+    <ion-content padding="true" style="background: url(img/black.jpg) no-repeat center;background-size:cover;" class="has-header">
+        <div class="spacer" style="width: 300px; height: 40px;"></div>
+        <h3 id="searchApp-heading1" style="color:#F6F4F4;font-weight:lighter;text-align: center;">Play Bubble Smash</h3>
+       <div class="spacer" style="width: 300px; height: 0px;"></div>
+         <div class="omb_login">
+    	<h2 class="omb_authTitle" style="color:#FFF;">Login or <a href="#register" style="color:#ffff99;">Sign up</a></h2>
+
+		<div class="row omb_row-sm-offset-3 omb_loginOr">
+			<div class="col-xs-12 col-sm-6">
+				<hr class="omb_hrOr">
+				<span class="omb_spanOr">   </span>
+			</div>
+		</div>
+           <div class="msg" style="color:white;">{{msg}}</div>
+           <form id="searchApp-form7" class="list">
+            <label class="item item-input" id="searchApp-input11" name="txtUserName">
+                <input type="email" placeholder="Enter username" ng-model="username">
+            </label>
+        </form>
+        <div class="spacer" style="width: 300px; height: 5px;"></div>
+        <form id="searchApp-form8" class="list">
+            <label class="item item-input" id="searchApp-input12" name="txtPwd">
+                <input type="password" placeholder="Enter password" ng-model="password">
+            </label>
+        </form>
+
+        	<div class="row omb_row-sm-offset-0">
+			<div class="col-xs-25 col-sm-10">
+				<p class="omb_forgotPwd" style="color:#F6F4F4>
+					<a href="#">Forgot password?</a>
+				</p>
+			</div>
+		</div>
+
+         <div id="searchApp-button-bar3" class="button-bar">
+             <button id="searchApp-button10" ng-click="register()" style="border-radius:38px 38px 38px 38px;" class="button button-light  button-block">Register</button>
+            <button id="searchApp-button11"  ng-click="login(username,password)" style="border-radius:38px 38px 38px 38px;" class="button button-light  button-block" >Sign In</button>
+        </div>
+          <div id="searchApp-button-bar3" class="button-bar">
+             <button id="searchApp-button10" ng-click="faceBookLogin()" style="border-radius:38px 38px 38px 38px;" class="button button-light  button-block">Login with Facebook</button>
+        </div>
+        <div id="searchApp-button-bar3" class="button-bar">
+
+             <button id="searchApp-button10" ng-click="guestLogin()" style="border-radius:38px 38px 38px 38px;" class="button button-light  button-block">Play as Guest</button>
+
+        </div>
+
+    </ion-content>
+</ion-view>

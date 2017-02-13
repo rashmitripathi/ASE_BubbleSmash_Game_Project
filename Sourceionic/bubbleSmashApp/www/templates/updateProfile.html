@@ -1,0 +1,37 @@
+<ion-view title="Bubble Smash" hide-back-button="true" id="page1" style="background-color:#109C4C;">
+    <ion-content padding="true" style="background: url(img/black.jpg) no-repeat center;background-size:cover;" class="has-header">
+        <div class="spacer" style="width: 300px; height: 40px;"></div>
+        <h3 id="searchApp-heading1" style="color:#F6F4F4;font-weight:lighter;text-align: center;">Play Bubble Smash</h3>
+       <div class="spacer" style="width: 300px; height: 0px;"></div>
+         <div class="omb_login">
+    	<h2 class="omb_authTitle" style="color:#FFF;">Update</h2>
+
+		<div class="row omb_row-sm-offset-3 omb_loginOr">
+			<div class="col-xs-12 col-sm-6">
+				<hr class="omb_hrOr">
+				<span class="omb_spanOr">   </span>
+			</div>
+		</div>
+           <div class="msg" style="color:white;">{{updateStatus}}</div>
+           <form id="searchApp-form7" class="list">
+            <label class="item item-input" id="searchApp-input11" name="email">
+                <input type="email" placeholder="Enter Email" ng-model="email">
+            </label>
+        </form>
+        <div class="spacer" style="width: 300px; height: 5px;"></div>
+        <form id="searchApp-form8" class="list">
+            <label class="item item-input" id="searchApp-input12" name="phoneNumber">
+                <input type="text" placeholder="Enter Phone Number" ng-model="phoneNumber">
+            </label>
+        </form>
+             <form id="searchApp-form7" class="list">
+            <label class="item item-input" id="searchApp-input11" name="password">
+                <input type="password" placeholder="Enter Password" ng-model="password">
+            </label>
+        </form>
+         <div id="searchApp-button-bar3" class="button-bar">
+             <button id="cancelButton" href="#level" ng-click="cancel()" style="border-radius:38px 38px 38px 38px;" class="button button-light  button-block"><<   Go Back</button>
+            <button id="signup-button13" type="submit" style="border-radius:38px 38px 38px 38px;" class="button button-light  button-block"  ng-click="updateUserData(email,phoneNumber,password)">Update  >></button>
+        </div>
+    </ion-content>
+</ion-view>

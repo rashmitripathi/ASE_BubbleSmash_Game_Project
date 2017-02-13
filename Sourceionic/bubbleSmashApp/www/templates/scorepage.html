@@ -1,0 +1,26 @@
+<ion-view title="Score Page" data-ng-init="score()">
+    <ion-content style="background: url(img/scorePageBackground.jpg) no-repeat center;background-size:cover;">
+        <div class="row row-center">
+            <div class="col text-center" id="gameOver">
+                 Game Over
+            </div>
+        </div>
+        
+        <div class="row row-center" id="easyLevelBubble" >
+            <div class="col text-center" >
+                <div class="success"><span id="score">Your Score : {{data}}</span></div>  
+            </div>
+        </div>
+        <i class="fa fa-home" aria-hidden="true" ></i>
+        <div class="row row-left" id="quitRow">
+            <div class="col text-left">
+                <img src="http://www.iconarchive.com/download/i85581/graphicloads/100-flat/home.ico" ng-click="backToHome()" id="home">
+            </div>
+    
+            <div class="col text-right">
+                <img src= "http://www.clker.com/cliparts/d/e/6/2/11954302831052874704molumen_multicolor_power_buttons_1.svg.hi.png" id="quit" ng-click="quit()">
+            </div>
+        </div>
+        <div id="scoresDiv"></div>
+    </ion-content>
+</ion-view>
